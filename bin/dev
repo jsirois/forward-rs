@@ -113,7 +113,6 @@ exec docker run \
   --interactive \
   --tty \
   --rm \
-  -p 8000:8000 \
   --volume $(pwd):/dev/forward-rs \
     $(get_user_image) \
       "$*"
